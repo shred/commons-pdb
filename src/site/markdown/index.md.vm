@@ -1,0 +1,54 @@
+commons-pdb
+===========
+
+A Java library for reading PalmOS PDB database files.
+
+The source code can be found at [GitHub](https://github.com/shred/commons-pdb) and is distributed under the terms of [GNU Lesser General Public License Version 3](http://www.gnu.org/licenses/lgpl-3.0.html).
+
+Installation
+------------
+
+_commons-pdb_ is available at Maven Central. Just add this snippet to your `pom.xml`:
+
+```xml
+<dependency>
+  <groupId>${project.groupId}</groupId>
+  <artifactId>${project.artifactId}</artifactId>
+  <version>${project.version}</version>
+</dependency>
+```
+
+Or use this snippet in your `build.gradle` (e.g. in Android Studio):
+
+```groovy
+dependencies {
+    compile('${project.groupId}:${project.artifactId}:${project.version}')
+}
+```
+
+Quick Start
+-----------
+
+This example reads a calendar PDB file, and converts the records to `ScheduleRecord` objects using a `ScheduleConverter`.
+
+```java
+try (PdbFile pdb = new PdbFile(new File("calendar.pdb")) {
+    PdbDatabase<ScheduleRecord, CategoryAppInfo> database = pdb.readDatabase(new ScheduleConverter());
+
+    System.out.printf("Name: %s\n", database.getName());
+
+    List<Category> cats = database.getAppInfo().getCategories();
+    for (int ix = 0; ix < cats.size(); ix++) {
+        System.out.printf("Category %d: %s\n", ix, cats.get(ix));
+    }
+
+    for (ScheduleRecord entry : database.getRecords()) {
+        System.out.println(entry);
+    }
+}
+```
+
+Dependencies and Requirements
+-----------------------------
+
+_commons-pdb_ requires at least Java 7, but has no other dependencies. It can also be used on Android (API level 19 or higher).
