@@ -1,4 +1,4 @@
-# commons-pdb ![build status](https://shredzone.org/badge/commons-pdb.svg) ![maven central](https://maven-badges.herokuapp.com/maven-central/org.shredzone.commons/commons-pdb/badge.svg)
+# commons-pdb ![build status](https://shredzone.org/badge/commons-pdb.svg) ![maven central](https://shredzone.org/maven-central/org.shredzone.commons/commons-pdb/badge.svg)
 
 A Java library for reading PalmOS PDB database files.
 
