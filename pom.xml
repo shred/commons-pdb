@@ -15,14 +15,14 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/shred/commons-pdb/</url>
-        <connection>scm:git:git@github.com:shred/commons-pdb.git</connection>
-        <developerConnection>scm:git:git@github.com:shred/commons-pdb.git</developerConnection>
+        <url>https://codeberg.org/shred/commons-pdb/</url>
+        <connection>scm:git:git@codeberg.org:shred/commons-pdb.git</connection>
+        <developerConnection>scm:git:git@codeberg.org:shred/commons-pdb.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
     <issueManagement>
-        <system>GitHub Issues</system>
-        <url>https://github.com/shred/commons-pdb/issues</url>
+        <system>Codeberg Issues</system>
+        <url>https://codeberg.org/shred/commons-pdb/issues</url>
     </issueManagement>
     <developers>
         <developer>

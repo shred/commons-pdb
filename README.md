@@ -45,8 +45,8 @@ There is also a [pdbconverter tool](http://pdbconverter.shredzone.org/) offering
 
 ## Contribute
 
-* Fork the [Source code at GitHub](https://github.com/shred/commons-pdb). Feel free to send pull requests.
-* Found a bug? [File a bug report](https://github.com/shred/commons-pdb/issues).
+* Fork the [Source code at Codeberg](https://codeberg.org/shred/commons-pdb). Feel free to send pull requests.
+* Found a bug? [File a bug report](https://codeberg.org/shred/commons-pdb/issues).
 
 ## License
 
